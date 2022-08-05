@@ -1,0 +1,92 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  #title {
+    color: white;
+    font-family: sans-serif;
+    font-variant: small-caps;
+  }
+  
+  body {
+    background-image: url("https://images.pexels.com/photos/4498792/pexels-photo-4498792.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0, auto;
+    width: 256px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: black;
+    border-radius: 16px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+  }
+  
+  input[type="text"] {
+    height: 75px;
+    width: 249px;
+    border: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+  }
+  
+  #clear {
+    grid-column: 1/3;
+    grid-row: 1;
+    /* color: black; */
+    /* background-color:#262834; */
+  }
+  #backspace {
+    /* background-color:#262834; */
+    /* color: black; */
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  #result {
+    grid-column: 3/5;
+    grid-row: 5;
+  }
+  
+  button {
+    margin: 3px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #262834;
+  }
+  
+  .highlight {
+    background-color: deepskyblue;
+    color: black;
+  }
+  
+  input:focus,
+  input:active,
+  button:focus,
+  button:active {
+    outline: none;
+  }
+  
